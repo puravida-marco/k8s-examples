@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: test
+spec:
+  schedule: 0 0 * * *
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: test
+              command:
+                - curl
+                - https://example.com
+              image: registry.access.redhat.com/ubi8/ubi:8.6
+          restartPolicy: OnFailure
