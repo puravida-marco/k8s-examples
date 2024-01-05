@@ -1,2 +1,3 @@
 # k8s-examples
-An repository to hold example Kubernetes related manifests and content.
+
+This repository is a personal collection of useful Kubernetes Manifest templates and related content.
